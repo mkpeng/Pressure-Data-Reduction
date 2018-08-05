@@ -1,5 +1,4 @@
 
-setwd("P:/Project code clean for github-20180723T151907Z-001/Project code clean for github/CRIO Data reduction project/Paper draft on pressure data - Office Computer/Data")
 
 library(tidyverse)
 library(lubridate)
