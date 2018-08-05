@@ -1,2 +1,10 @@
 # Pressure-Data-Reduction
-Development of a data reduction method on pressure data measured from sensor mattress
+**Background**: A randomized clinical trial (ClinicalTrials.gov: [NCT02325388](https://clinicaltrials.gov/ct2/show/NCT02325388))) assessing the utility of continuous pressure imaging (CPI) technology in reducing pressure injuries generated over 4.5 TB of pressure data, which created challenges in both the pre-processing and analyzing of trial data
+
+**Objective**: To explore an approach to reducing the amount of CPI data required for analyses to a manageable size without loss of critical information using a nested subset of pressure data.  
+
+**Methods**: Data from four enrolled study participants excluded from the analytical phase of the study was used to develop an approach to data reduction. A two-step data strategy was used. First, raw data were sampled at different frequencies (5, 30, 60, 120, and 240 seconds) to identify optimal measurement frequency. Second, similarity between adjacent frames was evaluated using correlation coefficients to identify position changes of enrolled study participants. Data strategy performance was evaluated through visual inspection using heat maps and time series plots.
+
+**Results**: A sampling frequency of every 60 seconds provided reasonable representation of changes in interface pressure over time. This approach translated to using only 1.7% of the collected data in analyses. In the second step it was found that 160 frames within 24 hours represented the pressure states of study participants. In total, only 480 frames from the 72 hours of collected data would be needed for analyses without loss of information. Only ~ 0.2% of the raw data collected would be required for assessment of the primary trial outcome. 
+
+**Conclusions**: Data reduction is an important component of big data analytics. Our two-step strategy markedly reduced the amount of data required for analyses without loss of information. This data reduction strategy, if validated, could be used in other CPI and other settings where large amounts of both temporal and spatial data must be analysed. 
